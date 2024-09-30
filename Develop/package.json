@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A content management system for employee management using Node.js, TypeScript, and PostgreSQL.",
-  "main": "src/server.ts",
+  "main": "dist/server.js",
   "scripts": {
     "start": "ts-node src/server.ts",
     "dev": "ts-node src/server.ts",
@@ -18,9 +18,10 @@
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.7.4",
     "@types/pg": "^8.11.10",
     "ts-node": "^10.9.2",
-    "typescript": "^4.9.5"
+    "typescript": "^5.6.2"
   },
   "author": "Grace Kirk",
   "license": "ISC"

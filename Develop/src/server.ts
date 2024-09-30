@@ -1,6 +1,6 @@
-import express from 'express';
 import inquirer from 'inquirer';
-import { query } from './connections'; // Import the query function from connections.ts
+import express from 'express'; // Import the express module
+import { query } from '../dist/connections'; // Import the query function from connections.js
 
 const app = express();
 const PORT = process.env.PORT || 3000;
