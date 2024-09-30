@@ -1,0 +1,23 @@
+{
+    "name": "content-management-system",
+    "version": "1.0.0",
+    "description": "A simple content management system using Node.js, Inquirer, and PostgreSQL",
+    "main": "server.ts",
+    "scripts": {
+        "start": "ts-node server.ts"
+    },
+    "dependencies": {
+        "inquirer": "^9.3.7",
+        "pg": "^8.13.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^4.9.5"
+    },
+    "devDependencies": {
+        "@types/inquirer": "^9.0.7",
+        "@types/node": "^16.18.112",
+        "@types/pg": "^8.11.10"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
