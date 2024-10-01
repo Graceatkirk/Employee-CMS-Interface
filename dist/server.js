@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
 import express from 'express'; // Import the express module
-import { query } from '../dist/connections.js'; // Import the query function from connections.ts
+import { query } from '../dist/connections'; // Import the query function from connections.js
 const app = express();
 const PORT = process.env.PORT || 3000;
 // Middleware to parse JSON request bodies
@@ -65,22 +65,22 @@ const viewRoles = async () => {
     console.log(res.rows); // Log the result to check the data
     if (res.rows.length > 0) {
         console.table(res.rows);
-    } else {
+    }
+    else {
         console.log('No roles found.');
     }
 };
-
 // Function to view all employees
 const viewEmployees = async () => {
     const res = await query('SELECT * FROM employees;');
     console.log(res.rows); // Log the result to check the data
     if (res.rows.length > 0) {
         console.table(res.rows);
-    } else {
+    }
+    else {
         console.log('No employees found.');
     }
 };
-
 // Function to add a department
 const addDepartment = async () => {
     const { departmentName } = await inquirer.prompt([
